@@ -39,9 +39,6 @@ jobs:
       actions: read
       contents: read
 
-      - run: |
-    echo "java version"
-    java -version
 
     strategy:
       fail-fast: false
@@ -66,6 +63,10 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
+
+      - run: |
+    echo "java version"
+    java -version
 
     # Add any setup steps before running the `github/codeql-action/init` action.
     # This includes steps like installing compilers or runtimes (`actions/setup-node`
