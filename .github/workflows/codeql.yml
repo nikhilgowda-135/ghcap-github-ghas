@@ -39,6 +39,10 @@ jobs:
       actions: read
       contents: read
 
+      - run: |
+    echo "java version"
+    java -version
+
     strategy:
       fail-fast: false
       matrix:
