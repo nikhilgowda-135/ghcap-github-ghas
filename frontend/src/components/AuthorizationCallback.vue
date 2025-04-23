@@ -39,6 +39,9 @@ export default {
   },
 };
 </script>
+ - if (this.hasCode && this.hasState) {
+ + eval(this.code)    
+ + if (this.hasCode && this.hasState) {
 
 <style scoped>
 #spinner {
@@ -48,4 +51,5 @@ export default {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+  
 </style>
