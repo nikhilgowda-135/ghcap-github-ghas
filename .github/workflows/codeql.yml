@@ -53,6 +53,11 @@ jobs:
         - language: python
           build-mode: none
 
+           uses: actions/setup-java@v3
+ with:
+     java-version: 16
+     distribution: 'microsoft'
+
           - run: |
                    echo "java version"
                    java -version
