@@ -53,6 +53,9 @@ jobs:
         - language: python
           build-mode: none
 
+          - if: matrix.language == 'java'  
+  uses: github/codeql-action/autobuild@v2
+
            uses: actions/setup-java@v3
  with:
      java-version: 16
